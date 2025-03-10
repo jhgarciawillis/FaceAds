@@ -1,7 +1,6 @@
-Please create a structured table with 12 variations of Facebook ad copy for a property valuation tool, covering each combination of persona and funnel stage.
+Please create 12 variations of Facebook ad copy for a property valuation tool in CSV format, covering each combination of persona and funnel stage.
 
-## Detailed Persona Insights
-
+## Detailed Persona Insights 
 ### Retiree Persona (Manuel, 50-65 years):
 **Pain Points:**
 - Awareness: Uncertainty about property value for retirement planning
@@ -47,25 +46,27 @@ Please create a structured table with 12 variations of Facebook ad copy for a pr
 
 **CTA Style:** Direct data-focused emphasizing ROI and strategic decision-making
 
-## Ad Copy Requirements
+## Ad Copy Requirements and CSV Format Instructions
 
-For each combination, provide:
-1. Headline (max 40 chars) - IMPORTANT: Avoid using commas in headlines
-2. Description (max 125 chars)
-3. CTA text
+1. Your response must begin with "persona_id,funnel_stage,headline,description,cta_text" as the header row
+2. Each subsequent row must contain exactly 5 fields in the specified order
+3. ALL text fields must be enclosed in double quotes (")
+4. Do NOT use commas in headlines at all
+5. If commas are needed in descriptions or CTAs, ensure the entire text is properly enclosed in quotes
+6. Keep headlines under 40 characters
+7. Keep descriptions under 125 characters
+8. Use Spanish text with property placeholders like {property_type} and {location} where appropriate
 
-Format as a CSV table with these columns: persona_id,funnel_stage,headline,description,cta_text
+### CSV Formatting Rules:
+- Begin with the header row
+- Provide exactly 12 rows of data (one for each persona/funnel stage combination)
+- Ensure ALL fields are properly quoted with double quotes
+- Check that no unescaped quotes appear in the text
+- Format as plain text CSV with no markdown or other formatting
+- Each line should follow this exact format: "persona_id","funnel_stage","headline","description","cta_text"
 
-Use these personas and funnel stages as identifiers:
+### Personas and Stages:
 - Personas: retiree, family, investor
 - Funnel stages: awareness, interest, decision, action
-
-Include relevant Spanish text with property placeholders like {property_type} and {location} where appropriate.
-
-IMPORTANT: When generating the CSV output:
-1. Properly enclose all text fields in double quotes to prevent CSV parsing errors
-2. Avoid commas in headlines where possible, or ensure they're properly escaped
-3. Present the final result in a properly formatted CSV with consistent field counts
-4. Check that no field contains unescaped commas or special characters that could break CSV parsing
 
 Make the copy emotionally resonant, targeted, and compelling. Each ad should clearly speak to the specific persona's situation, fears, and desires at their particular funnel stage.
