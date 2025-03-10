@@ -17,8 +17,8 @@ This system creates structured Facebook ads by combining:
 │   Structure   │────▶│  Generation   │────▶│   Generator   │────▶│   Structure   │
 │               │     │               │     │               │     │   Generator   │
 └───────────────┘     └───────────────┘     └───────────────┘     └───────────────┘
-       │                     │                     │                     │
-       ▼                     ▼                     ▼                     ▼
+│                     │                     │                     │
+▼                     ▼                     ▼                     ▼
 ┌───────────────┐     ┌───────────────┐     ┌───────────────┐     ┌───────────────┐
 │ Persona and   │     │ Ad copy with  │     │ Complete ad   │     │ Ready-to-use  │
 │ funnel data   │     │ placeholders  │     │ variations    │     │ FB campaign   │
