@@ -1,6 +1,9 @@
+# modules/campaign_generator.py
 import json
 import os
+import pandas as pd
 from datetime import datetime
+import streamlit as st
 
 def generate_facebook_campaign_structure(master_csv_file, output_file=None):
     """
@@ -9,6 +12,9 @@ def generate_facebook_campaign_structure(master_csv_file, output_file=None):
     Parameters:
     - master_csv_file: Path to the master CSV
     - output_file: Path to save the campaign structure JSON (optional)
+    
+    Returns:
+    - Path to the created JSON file
     """
     if output_file is None:
         output_file = f"facebook_campaign_structure_{datetime.now().strftime('%Y%m%d')}.json"
@@ -85,7 +91,6 @@ def generate_facebook_campaign_structure(master_csv_file, output_file=None):
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(campaigns, f, indent=2, ensure_ascii=False)
     
-    print(f"Generated Facebook campaign structure: {output_file}")
     return output_file
 
 def get_targeting_params(persona_id):
