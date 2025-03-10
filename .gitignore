@@ -1,0 +1,24 @@
+# Entorno virtual
+venv/
+.env
+.venv
+.venv_initialized
+.req_hash
+
+# Archivos específicos del proyecto
+activate.ps1
+RemaxData.xlsx
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.class
+*.so
+.Python
+
+# IDE y editores
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
