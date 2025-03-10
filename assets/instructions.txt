@@ -12,17 +12,6 @@ This system creates structured Facebook ads by combining:
 
 ## Data Flow Diagram
 
-┌───────────────┐     ┌───────────────┐     ┌───────────────┐     ┌───────────────┐
-│ Define Matrix │     │  Claude Copy  │     │  Master CSV   │     │   Campaign    │
-│   Structure   │────▶│  Generation   │────▶│   Generator   │────▶│   Structure   │
-│               │     │               │     │               │     │   Generator   │
-└───────────────┘     └───────────────┘     └───────────────┘     └───────────────┘
-│                     │                     │                     │
-▼                     ▼                     ▼                     ▼
-┌───────────────┐     ┌───────────────┐     ┌───────────────┐     ┌───────────────┐
-│ Persona and   │     │ Ad copy with  │     │ Complete ad   │     │ Ready-to-use  │
-│ funnel data   │     │ placeholders  │     │ variations    │     │ FB campaign   │
-└───────────────┘     └───────────────┘     └───────────────┘     └───────────────┘
 
 ## Complete Workflow
 

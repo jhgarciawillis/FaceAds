@@ -1,0 +1,62 @@
+<svg width="800" height="200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Boxes for top row -->
+  <rect x="10" y="10" width="150" height="60" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="210" y="10" width="150" height="60" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="410" y="10" width="150" height="60" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="610" y="10" width="150" height="60" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <!-- Boxes for bottom row -->
+  <rect x="10" y="120" width="150" height="60" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="210" y="120" width="150" height="60" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="410" y="120" width="150" height="60" fill="white" stroke="#333" stroke-width="2"/>
+  <rect x="610" y="120" width="150" height="60" fill="white" stroke="#333" stroke-width="2"/>
+  
+  <!-- Horizontal Arrows -->
+  <line x1="160" y1="40" x2="210" y2="40" stroke="#333" stroke-width="2"/>
+  <polygon points="205,35 215,40 205,45" fill="#333"/>
+  
+  <line x1="360" y1="40" x2="410" y2="40" stroke="#333" stroke-width="2"/>
+  <polygon points="405,35 415,40 405,45" fill="#333"/>
+  
+  <line x1="560" y1="40" x2="610" y2="40" stroke="#333" stroke-width="2"/>
+  <polygon points="605,35 615,40 605,45" fill="#333"/>
+  
+  <!-- Vertical Arrows -->
+  <line x1="85" y1="70" x2="85" y2="120" stroke="#333" stroke-width="2"/>
+  <polygon points="80,115 85,125 90,115" fill="#333"/>
+  
+  <line x1="285" y1="70" x2="285" y2="120" stroke="#333" stroke-width="2"/>
+  <polygon points="280,115 285,125 290,115" fill="#333"/>
+  
+  <line x1="485" y1="70" x2="485" y2="120" stroke="#333" stroke-width="2"/>
+  <polygon points="480,115 485,125 490,115" fill="#333"/>
+  
+  <line x1="685" y1="70" x2="685" y2="120" stroke="#333" stroke-width="2"/>
+  <polygon points="680,115 685,125 690,115" fill="#333"/>
+  
+  <!-- Text labels -->
+  <text x="85" y="40" text-anchor="middle" font-family="Arial" font-size="12">Define Matrix</text>
+  <text x="85" y="55" text-anchor="middle" font-family="Arial" font-size="12">Structure</text>
+  
+  <text x="285" y="40" text-anchor="middle" font-family="Arial" font-size="12">Claude Copy</text>
+  <text x="285" y="55" text-anchor="middle" font-family="Arial" font-size="12">Generation</text>
+  
+  <text x="485" y="40" text-anchor="middle" font-family="Arial" font-size="12">Master CSV</text>
+  <text x="485" y="55" text-anchor="middle" font-family="Arial" font-size="12">Generator</text>
+  
+  <text x="685" y="40" text-anchor="middle" font-family="Arial" font-size="12">Campaign</text>
+  <text x="685" y="55" text-anchor="middle" font-family="Arial" font-size="12">Structure</text>
+  
+  <!-- Bottom row labels -->
+  <text x="85" y="145" text-anchor="middle" font-family="Arial" font-size="12">Persona and</text>
+  <text x="85" y="160" text-anchor="middle" font-family="Arial" font-size="12">funnel data</text>
+  
+  <text x="285" y="145" text-anchor="middle" font-family="Arial" font-size="12">Ad copy with</text>
+  <text x="285" y="160" text-anchor="middle" font-family="Arial" font-size="12">placeholders</text>
+  
+  <text x="485" y="145" text-anchor="middle" font-family="Arial" font-size="12">Complete ad</text>
+  <text x="485" y="160" text-anchor="middle" font-family="Arial" font-size="12">variations</text>
+  
+  <text x="685" y="145" text-anchor="middle" font-family="Arial" font-size="12">Ready-to-use</text>
+  <text x="685" y="160" text-anchor="middle" font-family="Arial" font-size="12">FB campaign</text>
+</svg>

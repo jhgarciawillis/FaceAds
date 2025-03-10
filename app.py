@@ -59,8 +59,24 @@ if page == "Instructions":
     with open("assets/instructions.txt", "r") as f:
         instructions = f.read()
     
-    # Format the instructions with Markdown
-    st.markdown(instructions)
+    # Split the instructions to insert the SVG at the right location
+    if "## Data Flow Diagram" in instructions:
+        parts = instructions.split("## Data Flow Diagram")
+        before_diagram = parts[0] + "## Data Flow Diagram\n\n"
+        after_diagram = "\n\n" + parts[1].split("\n", 1)[1] if "\n" in parts[1] else parts[1]
+        
+        # Display first part of instructions
+        st.markdown(before_diagram)
+        
+        # Display SVG flowchart
+        svg_path = "assets/flowchart.svg"
+        st.image(svg_path, use_column_width=True)
+        
+        # Display rest of instructions
+        st.markdown(after_diagram)
+    else:
+        # If we can't find the section marker, just display everything
+        st.markdown(instructions)
     
     # Add a quick navigation section
     st.subheader("Quick Navigation")
