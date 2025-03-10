@@ -390,10 +390,27 @@ elif page == "All-in-One Workflow":
         # Preview
         preview_df = pd.DataFrame(st.session_state.matrix_data["matrix"][:3])
         st.dataframe(preview_df)
+        
+        # Add download button for matrix structure
+        matrix_json = json.dumps(st.session_state.matrix_data, indent=2)
+        st.download_button(
+            label="Download Matrix Structure (JSON)",
+            data=matrix_json,
+            file_name="matrix_structure.json",
+            mime="application/json"
+        )
     
     # Step 2: Copy Data
     st.subheader("Step 2: Copy Data")
-    st.write("Upload the CSV file generated with Claude:")
+    
+    # Display Claude prompt from file
+    with open(claude_prompt_file, "r") as f:
+        claude_prompt = f.read()
+    
+    st.write("1. Copy the Claude prompt below and paste it into Claude:")
+    st.text_area("Claude Prompt", claude_prompt, height=200)
+    
+    st.write("2. Upload the CSV file generated with Claude:")
     uploaded_file = st.file_uploader("Upload Copy CSV", type=["csv"])
     if uploaded_file is not None:
         try:

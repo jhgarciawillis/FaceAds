@@ -3,10 +3,10 @@ import streamlit as st
 
 def get_claude_prompt():
     """
-    Returns the prompt template for Claude to generate ad copy
+    Returns a simple default prompt for Claude.
+    This is only used if claude_prompt.txt doesn't exist yet.
     """
-    return """
-Please create a structured table with 12 variations of Facebook ad copy for a property valuation tool, covering each combination of persona and funnel stage.
+    return """Please create a structured table with 12 variations of Facebook ad copy for a property valuation tool, covering each combination of persona and funnel stage.
 
 Personas:
 1. Manuel (Retiree): 50-65 years old, considering downsizing for retirement
@@ -20,18 +20,23 @@ Funnel Stages:
 4. Action: Ready to complete valuation form
 
 For each combination, provide:
-1. Headline (max 40 chars)
+1. Headline (max 40 chars) - IMPORTANT: Avoid using commas in headlines
 2. Description (max 125 chars)
 3. CTA text
 
-Format as a CSV table with these columns:
-persona_id,funnel_stage,headline,description,cta_text
+Format as a CSV table with these columns: persona_id,funnel_stage,headline,description,cta_text
 
 Use these personas and funnel stages as identifiers:
 - Personas: retiree, family, investor
 - Funnel stages: awareness, interest, decision, action
 
 Include relevant Spanish text with property placeholders like {property_type} and {location} where appropriate.
+
+IMPORTANT: When generating the CSV output:
+1. Properly enclose all text fields in double quotes to prevent CSV parsing errors
+2. Avoid commas in headlines where possible, or ensure they're properly escaped
+3. Present the final result in a properly formatted CSV with consistent field counts
+4. Check that no field contains unescaped commas or special characters that could break CSV parsing
 """
 
 def display_copy_generation_instructions():

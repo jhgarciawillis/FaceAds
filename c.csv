@@ -1,0 +1,13 @@
+persona_id,funnel_stage,headline,description,cta_text
+retiree,awareness,¿Cuánto vale su casa ahora?,"Descubra cómo los precios de propiedades han cambiado. Muchos jubilados se sorprenden al ver el valor actual de su hogar.",Descubrir Valor
+retiree,interest,Planee su jubilación con confianza,"¿Pensando en vender? Conozca el valor exacto de su {property_type} en {location} antes de tomar decisiones importantes.",Valorar Mi Propiedad
+retiree,decision,Su casa podría valer más de lo que cree,"Obtenga una valoración precisa de su propiedad en 2 minutos. Ideal para planificar su próximo capítulo de vida.",Obtener Valoración
+retiree,action,Valoración gratuita lista para usted,"Su informe personalizado de valoración para su {property_type} en {location} está a solo un paso. Complete ahora.",Completar Ahora
+family,awareness,¿Su familia necesita más espacio?,"Descubra cuánto vale su hogar actual y qué podría comprar con ese valor en el mercado de hoy.",Ver Opciones
+family,interest,"Hogar en crecimiento, ¿presupuesto claro?","Conozca el valor exacto de su {property_type} y calcule cuánto podría invertir en su próxima casa familiar.",Calcular Valor
+family,decision,Valore su casa antes de buscar otra,"Obtenga una valoración detallada en minutos. El primer paso inteligente para familias que buscan mudarse.",Valorar Ahora
+family,action,Su valoración familiar está lista,"Complete el formulario final para recibir su informe de valoración y opciones de propiedades familiares en {location}.",Finalizar Valoración
+investor,awareness,Optimice su cartera inmobiliaria,"Conozca el rendimiento actual de propiedades similares a las suyas en {location} y maximice su inversión.",Analizar Mercado
+investor,interest,Datos precisos mejores inversiones,"Valore sus propiedades con exactitud utilizando los mismos datos que usan los profesionales inmobiliarios.",Valorar Portafolio
+investor,decision,Decisiones basadas en datos reales,"Obtenga valoraciones detalladas de sus propiedades en {location} con análisis comparativo de mercado incluido.",Obtener Análisis
+investor,action,Informe de inversión listo para review,"Su análisis completo de valoración para su cartera en {location} está a un clic. Acceda ahora a sus datos.",Acceder Ahora
