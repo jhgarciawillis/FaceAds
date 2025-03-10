@@ -54,20 +54,37 @@ page = st.sidebar.radio(
 # Main content
 if page == "Instructions":
     st.header("How to Use This Tool")
-    st.write("""
-    This tool helps you create a complete Facebook ad campaign for property valuation services.
-    Follow the steps in order, or use them individually as needed.
     
-    ### Complete Workflow:
-    1. **Define Matrix Structure**: Set up your personas, funnel stages, and property types
-    2. **Generate Copy with Claude**: Use provided prompt with Claude to create ad copy
-    3. **Create Master CSV**: Combine matrix and copy to generate all ad variations
-    4. **Generate Campaign Structure**: Create Facebook campaign structure from master CSV
+    # Load instructions from file
+    with open("assets/instructions.txt", "r") as f:
+        instructions = f.read()
     
-    You can use the navigation sidebar to move between steps.
-    """)
+    # Format the instructions with Markdown
+    st.markdown(instructions)
     
-    st.info("If you prefer to run the entire workflow at once, select 'All-in-One Workflow' from the sidebar.")
+    # Add a quick navigation section
+    st.subheader("Quick Navigation")
+    col1, col2, col3, col4, col5 = st.columns(5)
+    with col1:
+        if st.button("Start Workflow"):
+            st.session_state.page = "All-in-One Workflow"
+            st.experimental_rerun()
+    with col2:
+        if st.button("Step 1"):
+            st.session_state.page = "Step 1: Matrix Structure"
+            st.experimental_rerun()
+    with col3:
+        if st.button("Step 2"):
+            st.session_state.page = "Step 2: Copy Generation"
+            st.experimental_rerun()
+    with col4:
+        if st.button("Step 3"):
+            st.session_state.page = "Step 3: Master CSV"
+            st.experimental_rerun()
+    with col5:
+        if st.button("Step 4"):
+            st.session_state.page = "Step 4: Campaign Structure"
+            st.experimental_rerun()
 
 elif page == "Step 1: Matrix Structure":
     st.header("Step 1: Define Matrix Structure")
